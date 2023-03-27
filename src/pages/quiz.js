@@ -24,6 +24,8 @@ const Quiz = () => {
   
     const [count, setCount] = useState(0);
     const [score, setScore] = useState(0);
+    
+    const answerOrder = [0,1,2,3].sort(() => 0.5 -Math.random());
   
     const increment = () => {
       setCount(count + 1);
@@ -56,17 +58,17 @@ const Quiz = () => {
             question={currentQuestionSet[count].question}
             />
           <Answer 
-            value1={currentQuestionSet[count].answers[0].isCorrect}
-            answer1={currentQuestionSet[count].answers[0].text}
+            value1={currentQuestionSet[count].answers[answerOrder[0]].isCorrect}
+            answer1={currentQuestionSet[count].answers[answerOrder[0]].text}
 
-            value2={currentQuestionSet[count].answers[1].isCorrect}
-            answer2={currentQuestionSet[count].answers[1].text}
+            value2={currentQuestionSet[count].answers[answerOrder[1]].isCorrect}
+            answer2={currentQuestionSet[count].answers[answerOrder[1]].text}
 
-            value3={currentQuestionSet[count].answers[2].isCorrect}
-            answer3={currentQuestionSet[count].answers[2].text}
+            value3={currentQuestionSet[count].answers[answerOrder[2]].isCorrect}
+            answer3={currentQuestionSet[count].answers[answerOrder[2]].text}
 
-            value4={currentQuestionSet[count].answers[3].isCorrect}
-            answer4={currentQuestionSet[count].answers[3].text}
+            value4={currentQuestionSet[count].answers[answerOrder[3]].isCorrect}
+            answer4={currentQuestionSet[count].answers[answerOrder[3]].text}
 
             action={addPoint}
           />
