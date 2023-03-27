@@ -1,30 +1,26 @@
 import React, { useState } from "react";
 import { Answer } from '../Components/quiz/answer';
 import { Question } from '../Components/quiz/question';
-import { NextBtn } from '../Components/quiz/nextBtn'
-import { Score } from '../Components/quiz/score'
+import { NextBtn } from '../Components/quiz/nextBtn';
+import { Score } from '../Components/quiz/score';
 import { quizContent } from '../questions';
 
-const chosenDifficulty = 0;
+const difficultyLvl = 0;
 const noOfQuestions = 3;
 
 // choose random questions
-const getQuestions = () => {
-  const questionsOnChosenDifficuty = quizContent[chosenDifficulty].questions;
-  const q = [];
-  for (let i = 1; i <= noOfQuestions; i++) {
-    let randomIdx = Math.floor(Math.random() * questionsOnChosenDifficuty.length);
-    let qq = questionsOnChosenDifficuty.splice(randomIdx,1)[0];
-    q.push(qq);
-    return q;
-  };
-}
-  
+const getQuestions = (diffLvl=0, num=3, questionSet=quizContent) => {
+  const temp = questionSet[diffLvl].questions;
+  const currentQuestionSet = (temp
+                                  .sort(() => 0.5 - Math.random()))
+                                  .slice(0,num);
+
+  return currentQuestionSet;
+};
+
+const currentQuestionSet = getQuestions();
+
 const Quiz = () => {
-
-    const questions = getQuestions();
-
-    console.log(questions.length + questions);
   
     const [count, setCount] = useState(0);
     const [score, setScore] = useState(0);
@@ -38,12 +34,12 @@ const Quiz = () => {
         setScore(score + 1);
     };
   
-    if (count > 0) {
+    if (count > noOfQuestions-1) {
       return (
         <div className="App">
           <header className="App-header">
             <Score 
-              finalScore={score !== 0 ? score/noOfQuestions : score}
+              finalScore={Math.round(score / noOfQuestions * 100) + '%'}
               />
           </header>
         </div>
@@ -57,7 +53,7 @@ const Quiz = () => {
         </header>
           <Question 
             id={count}
-            question={questions[count].question}
+            question={currentQuestionSet[count].question}
             />
           <Answer 
             value1={currentQuestionSet[count].answers[0].isCorrect}
