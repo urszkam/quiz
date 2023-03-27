@@ -33,8 +33,9 @@ const Quiz = () => {
       setCount(count + 1);
     };
   
-    const addPoint = () => {
-      setScore(score + 1);
+    const addPoint = event => {
+      if (event.target.value === 'true')
+        setScore(score + 1);
     };
   
     if (count > 0) {
@@ -59,19 +60,24 @@ const Quiz = () => {
             question={questions[count].question}
             />
           <Answer 
-            value1={questions[count].answers[0].isCorrect}
-            answer1={questions[count].answers[0].text}
-            value2={questions[count].answers[1].isCorrect}
-            answer2={questions[count].answers[1].text}
-            value3={questions[count].answers[2].isCorrect}
-            answer3={questions[count].answers[2].text}
-            value4={questions[count].answers[3].isCorrect}
-            answer4={questions[count].answers[3].text}
+            value1={currentQuestionSet[count].answers[0].isCorrect}
+            answer1={currentQuestionSet[count].answers[0].text}
+
+            value2={currentQuestionSet[count].answers[1].isCorrect}
+            answer2={currentQuestionSet[count].answers[1].text}
+
+            value3={currentQuestionSet[count].answers[2].isCorrect}
+            answer3={currentQuestionSet[count].answers[2].text}
+
+            value4={currentQuestionSet[count].answers[3].isCorrect}
+            answer4={currentQuestionSet[count].answers[3].text}
+
+            action={addPoint}
           />
           <NextBtn 
             action={increment}
           />
-        {count}
+        Score:{score}
       </div>
     );
   };
