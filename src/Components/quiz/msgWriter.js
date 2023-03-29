@@ -1,5 +1,6 @@
 import React from "react";
 import Typewriter from 'typewriter-effect';
+import './msgWriter.css';
 
 export const MsgWriter = (props) => {
     const {isCorrect} = props;
@@ -15,14 +16,16 @@ export const MsgWriter = (props) => {
     randomMsg(isCorrect);
 
     return (
-        <div>
+        <div className="typewriter__container">
             <h1>
             <Typewriter 
                 options={{
                     autoStart: true,
                     loop: true,
+                    delay: 120,
                     pauseFor: 2500,
-                    strings: [randomMsg(isCorrect)]
+                    strings: [randomMsg(isCorrect)],
+                    wrapperClassName: 'typewriter__text'
                 }}
             />
             </h1>
