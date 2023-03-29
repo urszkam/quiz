@@ -1,5 +1,6 @@
-import './answer.css';
 import React from "react";
+import './answer.css';
+
 
 const AnswerBtn = (props) => {
     const {id, value, action, answer} = props;
@@ -26,30 +27,34 @@ export const Answer = (props) => {
 
     return (
         <div className="answer__container">
-            <AnswerBtn 
-                id={1}
-                value={value1}
-                answer={answer1}
-                action={action}
-            />
-            <AnswerBtn 
-                id={2}
-                value={value2}
-                answer={answer2}
-                action={action}
-            />
-            <AnswerBtn 
-                id={3}
-                value={value3}
-                answer={answer3}
-                action={action}
-            />
-            <AnswerBtn 
-                id={4}
-                value={value4}
-                answer={answer4}
-                action={action}
-            />
+            <div className="answer__inner-container">
+                <AnswerBtn 
+                    id={1}
+                    value={value1}
+                    answer={answer1}
+                    action={action}
+                />
+                <AnswerBtn 
+                    id={2}
+                    value={value2}
+                    answer={answer2}
+                    action={action}
+                />
+            </div>
+            <div className="answer__inner-container">
+                <AnswerBtn 
+                    id={3}
+                    value={value3}
+                    answer={answer3}
+                    action={action}
+                />
+                <AnswerBtn 
+                    id={4}
+                    value={value4}
+                    answer={answer4}
+                    action={action}
+                />
+            </div>
         </div>
     );
 }
