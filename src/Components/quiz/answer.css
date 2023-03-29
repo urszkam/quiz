@@ -4,7 +4,6 @@
   border: 0 solid #E2E8F0;
   box-shadow: 0 4px 6px -1px #00a8e8ff, 0 2px 4px -1px #007ea7ff;
   box-sizing: border-box;
-  /* color: #1A202C; */
   display: inline-flex;
   font-family: Inter, sans-serif;
   font-size: 1rem;
@@ -23,6 +22,20 @@
   touch-action: manipulation;
 }
 
+.answerBtn:disabled {
+  box-shadow: 0 4px 6px -1px gray, 0 2px 4px -1px #00171fff;
+}
+
+.correctAnswer:disabled {
+  color: #499F68;
+  box-shadow: 0 4px 6px -1px #499F68, 0 2px 4px -1px #4CAF50;
+}
+
+.incorrectAnswer:disabled {
+  color: #BA274A;
+  box-shadow: 0 4px 6px -1px #BA274A, 0 2px 4px -1px #f44336;
+}
+
 .answer__container {
     display: flex;
     width: 55rem;
@@ -38,4 +51,3 @@
     justify-content: space-between;
     height: 8rem;
 }
-  
