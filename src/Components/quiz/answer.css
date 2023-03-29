@@ -1,4 +1,41 @@
+.answerBtn {
+  align-items: center;
+  background: #FFFFFF;
+  border: 0 solid #E2E8F0;
+  box-shadow: 0 4px 6px -1px #00a8e8ff, 0 2px 4px -1px #007ea7ff;
+  box-sizing: border-box;
+  /* color: #1A202C; */
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 2rem;
+  justify-content: center;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  padding: 24px;
+  text-decoration: none;
+  width: 25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
 .answer__container {
     display: flex;
+    width: 55rem;
+    justify-content: space-between;
+    margin-top: 2rem;
     flex-direction: row;
+    margin-top: 2rem;
+  }
+
+.answer__inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8rem;
 }
+  

@@ -1,0 +1,14 @@
+.question__text {
+    font-size:x-large;
+    text-align: center;
+    line-height: 1.7;
+    justify-self: center;
+}
+
+.question__div {
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 1rem;
+}

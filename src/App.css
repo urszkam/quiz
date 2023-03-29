@@ -1,4 +1,12 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: #00171fff;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -36,4 +44,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
