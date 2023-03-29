@@ -26,14 +26,14 @@
   box-shadow: 0 4px 6px -1px gray, 0 2px 4px -1px #00171fff;
 }
 
-.correctAnswer {
-  background-color: #4CAF50;
-  box-shadow: 0 4px 6px -1px #4CAF50, 0 2px 4px -1px #4CAF50;
+.correctAnswer:disabled {
+  color: #499F68;
+  box-shadow: 0 4px 6px -1px #499F68, 0 2px 4px -1px #4CAF50;
 }
 
-.incorrectAnswer {
-  background-color: #f44336;
-  box-shadow: 0 4px 6px -1px #f44336, 0 2px 4px -1px #f44336;
+.incorrectAnswer:disabled {
+  color: #BA274A;
+  box-shadow: 0 4px 6px -1px #BA274A, 0 2px 4px -1px #f44336;
 }
 
 .answer__container {
