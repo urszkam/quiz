@@ -21,13 +21,16 @@ const getQuestions = (diffLvl=0, num=3, questionSet=quizContent) => {
 };
 
 const currentQuestionSet = getQuestions();
-const answerOrder = [0,1,2,3].sort(() => 0.5 -Math.random());
+// const answerOrder = [0,1,2,3].sort(() => 0.5 -Math.random());
 
 const Quiz = () => {
   
     const [count, setCount] = useState(0);
     const [score, setScore] = useState(0);
     const [msgWriter, setMsgWriter] = useState([]);
+    const [answerOrder, setAnswerOrder] = useState([0,1,2,3].sort(() => 0.5 -Math.random()));
+
+    const answerBtns = document.getElementsByClassName("answerBtn");
   
     const increment = () => {
       setCount(count + 1);
@@ -38,6 +41,10 @@ const Quiz = () => {
         setScore(score + 1);
     }
 
+    const shuffleAnswers = () => {
+      setAnswerOrder(answerOrder.sort(() => 0.5 -Math.random()))
+    }
+    
     const checkAnswer = event => {
       addPoint(event.target.value);
       setMsgWriter(msgWriter.concat(<MsgWriter 
@@ -48,6 +55,7 @@ const Quiz = () => {
     const nextQuestion = () => {
       increment();
       setMsgWriter([]);
+      shuffleAnswers();
     }
   
     if (count > noOfQuestions-1) {
