@@ -41,6 +41,16 @@ const Quiz = () => {
         setScore(score + 1);
     }
 
+    const disableButtons = () => {
+      for (let i = 0; i < answerBtns.length; i++)
+        answerBtns[i].disabled=true;
+    }
+
+    const enableButtons = () => {
+      for (let i = 0; i < answerBtns.length; i++)
+        answerBtns[i].disabled=false;
+    }
+
     const shuffleAnswers = () => {
       setAnswerOrder(answerOrder.sort(() => 0.5 -Math.random()))
     }
@@ -50,11 +60,13 @@ const Quiz = () => {
       setMsgWriter(msgWriter.concat(<MsgWriter 
                                       isCorrect={event.target.value} 
                                     />));
+      disableButtons();
     }
 
     const nextQuestion = () => {
       increment();
       setMsgWriter([]);
+      enableButtons();
       shuffleAnswers();
     }
   
