@@ -29,13 +29,13 @@ export const Answer = (props) => {
         <div className="answer__container">
             <div className="answer__inner-container">
                 <AnswerBtn 
-                    id={1}
+                    id={'answer1'}
                     value={value1}
                     answer={answer1}
                     action={action}
                 />
                 <AnswerBtn 
-                    id={2}
+                    id={'answer2'}
                     value={value2}
                     answer={answer2}
                     action={action}
@@ -43,13 +43,13 @@ export const Answer = (props) => {
             </div>
             <div className="answer__inner-container">
                 <AnswerBtn 
-                    id={3}
+                    id={'answer3'}
                     value={value3}
                     answer={answer3}
                     action={action}
                 />
                 <AnswerBtn 
-                    id={4}
+                    id={'answer4'}
                     value={value4}
                     answer={answer4}
                     action={action}

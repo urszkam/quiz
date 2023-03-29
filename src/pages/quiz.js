@@ -8,6 +8,7 @@ import { MsgWriter } from '../Components/quiz/msgWriter'
 import { Logo } from '../Components/quiz/logo';
 import { quizContent } from '../questions';
 
+
 const difficultyLvl = 0;
 const noOfQuestions = 3;
 
@@ -21,7 +22,6 @@ const getQuestions = (diffLvl=0, num=3, questionSet=quizContent) => {
 };
 
 const currentQuestionSet = getQuestions();
-// const answerOrder = [0,1,2,3].sort(() => 0.5 -Math.random());
 
 const Quiz = () => {
   
@@ -42,17 +42,34 @@ const Quiz = () => {
     }
 
     const disableButtons = () => {
-      for (let i = 0; i < answerBtns.length; i++)
-        answerBtns[i].disabled=true;
+      for (let btn of answerBtns)
+        btn.disabled=true;
     }
 
     const enableButtons = () => {
-      for (let i = 0; i < answerBtns.length; i++)
-        answerBtns[i].disabled=false;
+      for (let btn of answerBtns)
+        btn.disabled=false;
     }
 
     const shuffleAnswers = () => {
       setAnswerOrder(answerOrder.sort(() => 0.5 -Math.random()))
+    }
+
+    const highlightAnswer = (target) => {
+      if (target.value === 'true') {
+        target.classList.add("correctAnswer");
+      } else {
+        target.classList.add("incorrectAnswer");
+      }
+    }
+
+    const removeHighlight = () => {
+      for (let btn of answerBtns) {
+        if (btn.classList.length > 1) {
+          btn.className='answerBtn';
+          break;
+        }
+      }
     }
     
     const checkAnswer = event => {
@@ -61,6 +78,7 @@ const Quiz = () => {
                                       isCorrect={event.target.value} 
                                     />));
       disableButtons();
+      highlightAnswer(event.target);
     }
 
     const nextQuestion = () => {
@@ -68,6 +86,7 @@ const Quiz = () => {
       setMsgWriter([]);
       enableButtons();
       shuffleAnswers();
+      removeHighlight();
     }
   
     if (count > noOfQuestions-1) {
@@ -94,7 +113,7 @@ const Quiz = () => {
             <Question 
               id={count}
               question={currentQuestionSet[count].question}
-              />
+            />
 
             <Answer 
               value1={currentQuestionSet[count].answers[answerOrder[0]].isCorrect}
