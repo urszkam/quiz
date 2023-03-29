@@ -1,0 +1,10 @@
+.logo__container {
+    position: relative;
+}
+
+.logo__img {
+    position: absolute;
+    top: 8px;
+    left: 10rem;
+    font-size: 18px;
+}
