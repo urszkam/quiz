@@ -6,6 +6,7 @@ import { NextBtn } from '../Components/quiz/nextBtn';
 import { Score } from '../Components/quiz/score';
 import { MsgWriter } from '../Components/quiz/msgWriter'
 import { Logo } from '../Components/quiz/logo';
+import { Fish } from '../Components/quiz/fish'
 import { quizContent } from '../questions';
 
 
@@ -89,7 +90,7 @@ const Quiz = () => {
       removeHighlight();
     }
   
-    if (count > noOfQuestions-1) {
+    if (count == noOfQuestions) {
       return (
         <div className="App__container">
           <header>
@@ -97,8 +98,9 @@ const Quiz = () => {
           </header>
           <div className="page-container">
               <Score 
-                finalScore={Math.round(score / noOfQuestions * 100) + '%'}
+                finalScore={score/noOfQuestions}
                 />
+              <Fish />
           </div>
         </div>
       )
@@ -138,7 +140,6 @@ const Quiz = () => {
             <NextBtn 
               action={nextQuestion}
             />
-
             {/* Score:{score} */}
         </div>
       </div>
