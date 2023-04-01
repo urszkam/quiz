@@ -6,7 +6,8 @@ import { NextBtn } from '../Components/quiz/nextBtn';
 import { Score } from '../Components/quiz/score';
 import { MsgWriter } from '../Components/quiz/msgWriter'
 import { Logo } from '../Components/quiz/logo';
-import { Fish } from '../Components/quiz/fish'
+import { Fish } from '../Components/quiz/fish';
+import { Footer } from '../Components/quiz/footer';
 import { quizContent } from '../questions';
 
 
@@ -14,7 +15,7 @@ const difficultyLvl = 0;
 const noOfQuestions = 3;
 
 // choose random questions
-const getQuestions = (diffLvl=0, num=3, questionSet=quizContent) => {
+const getQuestions = (diffLvl, num, questionSet=quizContent) => {
   const temp = questionSet[diffLvl].questions;
   const currentQuestionSet = (temp
                                   .sort(() => 0.5 - Math.random()))
@@ -22,7 +23,7 @@ const getQuestions = (diffLvl=0, num=3, questionSet=quizContent) => {
   return currentQuestionSet;
 };
 
-const currentQuestionSet = getQuestions();
+const currentQuestionSet = getQuestions(difficultyLvl, noOfQuestions);
 
 const Quiz = () => {
   
@@ -102,6 +103,7 @@ const Quiz = () => {
                 />
               <Fish />
           </div>
+          <Footer />
         </div>
       )
     }
@@ -142,6 +144,7 @@ const Quiz = () => {
             />
             {/* Score:{score} */}
         </div>
+        <Footer />
       </div>
     );
   };
