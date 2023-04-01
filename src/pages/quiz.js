@@ -6,6 +6,8 @@ import { NextBtn } from '../Components/quiz/nextBtn';
 import { Score } from '../Components/quiz/score';
 import { MsgWriter } from '../Components/quiz/msgWriter'
 import { Logo } from '../Components/quiz/logo';
+import { Fish } from '../Components/quiz/fish';
+import { Footer } from '../Components/quiz/footer';
 import { quizContent } from '../questions';
 
 
@@ -13,7 +15,7 @@ const difficultyLvl = 0;
 const noOfQuestions = 3;
 
 // choose random questions
-const getQuestions = (diffLvl=0, num=3, questionSet=quizContent) => {
+const getQuestions = (diffLvl, num, questionSet=quizContent) => {
   const temp = questionSet[diffLvl].questions;
   const currentQuestionSet = (temp
                                   .sort(() => 0.5 - Math.random()))
@@ -21,7 +23,7 @@ const getQuestions = (diffLvl=0, num=3, questionSet=quizContent) => {
   return currentQuestionSet;
 };
 
-const currentQuestionSet = getQuestions();
+const currentQuestionSet = getQuestions(difficultyLvl, noOfQuestions);
 
 const Quiz = () => {
   
@@ -89,7 +91,7 @@ const Quiz = () => {
       removeHighlight();
     }
   
-    if (count > noOfQuestions-1) {
+    if (count == noOfQuestions) {
       return (
         <div className="App__container">
           <header>
@@ -97,9 +99,11 @@ const Quiz = () => {
           </header>
           <div className="page-container">
               <Score 
-                finalScore={Math.round(score / noOfQuestions * 100) + '%'}
+                finalScore={score/noOfQuestions}
                 />
+              <Fish />
           </div>
+          <Footer />
         </div>
       )
     }
@@ -138,9 +142,9 @@ const Quiz = () => {
             <NextBtn 
               action={nextQuestion}
             />
-
             {/* Score:{score} */}
         </div>
+        <Footer />
       </div>
     );
   };

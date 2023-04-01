@@ -5,8 +5,9 @@ import './score.css';
 
 export const Score = (props) => {
     const {finalScore} = props;
-
-    const finalPercentage = parseInt(finalScore);
+    console.log(typeof(finalScore))
+    const finalPercentage = Math.round(finalScore * 100);
+    console.log(finalScore, finalPercentage);
 
     return (
         <div>
@@ -14,7 +15,7 @@ export const Score = (props) => {
                 <CountUp 
                   start={0}
                   end={finalPercentage}
-                  duration={5}
+                  duration={13}
                 /> %
             </h1>
         </div>
