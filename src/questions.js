@@ -25,12 +25,12 @@ export const quizContent = [
             {text: "Southern", isCorrect: false}
         ]
         },
-        {question: "What ship did the world's first circumnavigation?",
-        answers: [
-            {text: "Victoria (1520s)", isCorrect: true},
-            {text: "Santa Maria (1492)", isCorrect: false},
-            {text: "Mayflower (1620)", isCorrect: false},
-            {text: "The Golden Hind (1570s)", isCorrect: false}
+        {question: "Which ocean is named after a country?",
+            answers: [
+            {text: "Atlantic Ocean", isCorrect: false},
+            {text: "Indian Ocean", isCorrect: false},
+            {text: "Pacific Ocean", isCorrect: true},
+            {text: "Arctic Ocean", isCorrect: false}
         ]
         },
         {question: "The Atlantic and Pacific Oceans are connected by which manmade waterway?", 
@@ -45,98 +45,88 @@ export const quizContent = [
     },
     {difficulty: "medium",
     questions: [
-        {question: "",
+        {question: "A whale shark is the largest fish in the world. They are around the same size as…",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "A school bus", isCorrect: true},
+            {text: "A fridge", isCorrect: false},
+            {text: "A sofa", isCorrect: false},
+            {text: "A smal car", isCorrect: false}
         ]
         },
-        {question: "",
+        {question: "What is the largest species of shark?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Hammerhead Shark", isCorrect: false},
+            {text: "Tiger Shark", isCorrect: false},
+            {text: "Great White Shark", isCorrect: true},
+            {text: "Whale Shark", isCorrect: false}
         ]
         },
-        {question: "",
+        {question: "What is the name of the species of octopus known for its ability to change colors and shape?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Giant Pacific Octopus", isCorrect: false},
+            {text: "Mimic Octopus", isCorrect: true},
+            {text: "Blue-ringed Octopus", isCorrect: false},
+            {text: "Dumbo Octopus", isCorrect: false}
         ]
         },
-        {question: "",
+        {question: "Which ocean is the smallest in the world?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Arctic Ocean", isCorrect: false},
+            {text: "Indian Ocean", isCorrect: false},
+            {text: "Southern Ocean", isCorrect: false},
+            {text: "Atlantic Ocean", isCorrect: true}
         ]
         },
-        {question: "",
+        {question: "What is the process by which ocean water evaporates and forms clouds called?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Precipitation", isCorrect: false},
+            {text: "Condensation", isCorrect: true},
+            {text: "Transpiration", isCorrect: false},
+            {text: "Sublimation", isCorrect: false}
         ]
-        },
+        }
     ]
 },
     {difficulty: "hard",
     questions: [
-        {question: "",
+        {question: "Turtles shells are made of how many bones fused together?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Over 50", isCorrect: true},
+            {text: "Over 30", isCorrect: false},
+            {text: "Over 70", isCorrect: false},
+            {text: "Over 5", isCorrect: false}
         ]
         },
-        {question: "",
+        {question: "What ship did the world's first circumnavigation?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Victoria (1520s)", isCorrect: true},
+            {text: "Santa Maria (1492)", isCorrect: false},
+            {text: "Mayflower (1620)", isCorrect: false},
+            {text: "The Golden Hind (1570s)", isCorrect: false}
         ]
         },
-        {question: "",
+        {question: "Which country has the longest coastline in the world?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Russia", isCorrect: true},
+            {text: "Canada", isCorrect: false},
+            {text: "Australia", isCorrect: false},
+            {text: "China", isCorrect: false}
         ]
         },
-        {question: "",
+        {question: "What is the name of the phenomenon that occurs when warm ocean currents meet cold air, causing fog and mist to form?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "El Niño", isCorrect: false},
+            {text: "Hurricane", isCorrect: false},
+            {text: "Coastal Upwelling", isCorrect: false},
+            {text: "Sea Smoke", isCorrect: true}
         ]
         },
-        {question: "",
+        {question: "What is the name of the tiny plant-like organisms that form the base of the marine food chain?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Zooplankton", isCorrect: false},
+            {text: "Phytoplankton", isCorrect: true},
+            {text: "Seagrass", isCorrect: false},
+            {text: "Kelp", isCorrect: false}
         ]
         },
     ]
