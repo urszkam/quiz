@@ -12,8 +12,8 @@ const arrowLeft = 37;
 const arrowUp = 38;
 const arrowRight = 39;
 const arrowDown = 40;
-const keyA = 65;
-const keyS = 83;
+const keyPlus = 61;
+const keyMinus = 173;
 
 
 export const Fish = () => {
@@ -77,9 +77,9 @@ export const Fish = () => {
             x1 -= 5;
         } else if (p5.keyCode === arrowRight) {
             x1 += 5;
-        } else if (p5.keyCode === keyA && size3 < 500) {
+        } else if (p5.keyCode === keyPlus && size3 < 500) {
             size3 += 5;
-        } else if (p5.keyCode === keyS && size3 > 100) {
+        } else if (p5.keyCode === keyMinus && size3 > 100) {
             size3 -= 5;
         }
 
