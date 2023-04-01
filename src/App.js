@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route}
 import Main from './pages/main';
 import Instructions from './pages/instructions';
 import Quiz from './pages/quiz';
+import { Footer } from './Components/quiz/footer'
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/instructions' element={<Instructions/>} />
         <Route path='/quiz' element={<Quiz/>} />
     </Routes>
+      <Footer />
     </Router>
   );
 }

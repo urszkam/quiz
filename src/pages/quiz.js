@@ -7,7 +7,6 @@ import { Score } from '../Components/quiz/score';
 import { MsgWriter } from '../Components/quiz/msgWriter'
 import { Logo } from '../Components/quiz/logo';
 import { Fish } from '../Components/quiz/fish';
-import { Footer } from '../Components/quiz/footer';
 import { quizContent } from '../questions';
 
 
@@ -103,7 +102,7 @@ const Quiz = () => {
                 />
               <Fish />
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       )
     }
@@ -142,9 +141,8 @@ const Quiz = () => {
             <NextBtn 
               action={nextQuestion}
             />
-            {/* Score:{score} */}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   };
