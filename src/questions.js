@@ -25,12 +25,12 @@ export const quizContent = [
             {text: "Southern", isCorrect: false}
         ]
         },
-        {question: "What ship did the world's first circumnavigation?",
-        answers: [
-            {text: "Victoria (1520s)", isCorrect: true},
-            {text: "Santa Maria (1492)", isCorrect: false},
-            {text: "Mayflower (1620)", isCorrect: false},
-            {text: "The Golden Hind (1570s)", isCorrect: false}
+        {question: "Which ocean is named after a country?",
+            answers: [
+            {text: "Atlantic Ocean", isCorrect: false},
+            {text: "Indian Ocean", isCorrect: false},
+            {text: "Pacific Ocean", isCorrect: true},
+            {text: "Arctic Ocean", isCorrect: false}
         ]
         },
         {question: "The Atlantic and Pacific Oceans are connected by which manmade waterway?", 
@@ -45,10 +45,17 @@ export const quizContent = [
     },
     {difficulty: "medium",
     questions: [
+        {question: "A whale shark is the largest fish in the world. They are around the same size as…",
+        answers: [
+            {text: "A school bus", isCorrect: true},
+            {text: "A fridge", isCorrect: false},
+            {text: "A sofa", isCorrect: false},
+            {text: "A smal car", isCorrect: false}
+        ]
+        },
         {question: "",
         answers: [
             {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
             {text: "", isCorrect: false},
             {text: "", isCorrect: false},
             {text: "", isCorrect: false}
@@ -59,81 +66,64 @@ export const quizContent = [
             {text: "", isCorrect: true},
             {text: "", isCorrect: false},
             {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
             {text: "", isCorrect: false}
         ]
         },
-        {question: "",
+        {question: "Which ocean is the smallest in the world?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Arctic Ocean", isCorrect: false},
+            {text: "Indian Ocean", isCorrect: false},
+            {text: "Southern Ocean", isCorrect: false},
+            {text: "Atlantic Ocean", isCorrect: true}
         ]
         },
-        {question: "",
+        {question: "What is the process by which ocean water evaporates and forms clouds called?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Precipitation", isCorrect: false},
+            {text: "Condensation", isCorrect: true},
+            {text: "Transpiration", isCorrect: false},
+            {text: "Sublimation", isCorrect: false}
         ]
-        },
-        {question: "",
-        answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
-        ]
-        },
+        }
     ]
 },
     {difficulty: "hard",
     questions: [
-        {question: "",
+        {question: "Turtles shells are made of how many bones fused together?",
         answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
+            {text: "Over 50", isCorrect: true},
+            {text: "Over 30", isCorrect: false},
+            {text: "Over 70", isCorrect: false},
+            {text: "Over 5", isCorrect: false}
+        ]
+        },
+        {question: "What ship did the world's first circumnavigation?",
+        answers: [
+            {text: "Victoria (1520s)", isCorrect: true},
+            {text: "Santa Maria (1492)", isCorrect: false},
+            {text: "Mayflower (1620)", isCorrect: false},
+            {text: "The Golden Hind (1570s)", isCorrect: false}
+        ]
+        },
+        {question: "Which country has the longest coastline in the world?",
+        answers: [
+            {text: "Russia", isCorrect: true},
+            {text: "Canada", isCorrect: false},
+            {text: "Australia", isCorrect: false},
+            {text: "China", isCorrect: false}
+        ]
+        },
+        {question: "What is the name of the phenomenon that occurs when warm ocean currents meet cold air, causing fog and mist to form?",
+        answers: [
+            {text: "El Niño", isCorrect: false},
+            {text: "Hurricane", isCorrect: false},
+            {text: "Coastal Upwelling", isCorrect: false},
+            {text: "Sea Smoke", isCorrect: true}
         ]
         },
         {question: "",
         answers: [
             {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
-        ]
-        },
-        {question: "",
-        answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
-        ]
-        },
-        {question: "",
-        answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false},
-            {text: "", isCorrect: false}
-        ]
-        },
-        {question: "",
-        answers: [
-            {text: "", isCorrect: true},
-            {text: "", isCorrect: false},
             {text: "", isCorrect: false},
             {text: "", isCorrect: false},
             {text: "", isCorrect: false}
