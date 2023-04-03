@@ -1,54 +1,140 @@
 import React from "react";
-  
-const Instructions = () => {
+import './instructions.css';
+import { Logo } from '../Components/quiz/logo';
+import { StartBtn } from "../Components/instructions/startBtn";
+import { ReturnBtn } from "../Components/instructions/returnBtn";
+
+
+  const Instructions = () => {
   return (
-    <div>
-      <h1>Page with instructions</h1>
+    <div className="Instructions-page">
+      <header className="Instructions-header">
+      <h1 id="title1">Instructions</h1>
+      </header>
 
-      <body>
-    <h1>RULES & REGULATIONS</h1>
+      <body className="Instructions-body">
+      <p1 id="body1">
+        <p>
+        1. There will be five questions in total for each difficulty chosen. 
+        </p>
 
-    <h2>NOTE:</h2>
-
-      <p1>
-        1. The amount of questions picked from the starting page cannot be changed after starting the quiz.
+        <p>
+        NOTE: The difficulty chosen from the starting page cannot be changed after starting the quiz.
         In order to change the amount of questions, please return to the main page and change the amount to your liking.
-      </p1>
+        </p>
 
-        <p2>
-        2. The qustions will be randomly selected and will strictly revole around the ocean life and the organisms living therein.
-       </p2>
+        <p>
+        2. The qustions will be randomly selected and will strictly revolve around the ocean life and the organisms living therein.
+        </p>
 
-        <p3>
+        <p>
         3. Feel free to look up the answers, no judging from our end.
         Google is always lovely but try these sources at the bottom of the page for a better grasp of the topic.
-        </p3>
+        </p>
 
-        <p4>
+        <p>
         4. Have fun guessing. You may be shocked by how lucky you actually are or by how much you actually know.
-      </p4>
+        </p>
 
-        <p5>
+        <p>
         INPUT 'HOME' button on LEFT and 'START' button on RIGHT 
-      </p5> 
+        </p>
+        </p1>
+      </body>
 
+      <body className="Sources-body">
+      <h2 id="title2">HELPFUL SOURCES:</h2>
+      <p id="sourceParas">
+      <p>
+        <a
+          className="Instructions-link"
+          href="https://www.britannica.com/topic/Panama-Canal"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PANAMA CANAL by Norman J. Padelford et. al. for Encyclopedia Britannica, March 3, 2023.
+        </a>
+      </p>
+      <p>Said literally no one: I yearn to know what <em>oceans</em> are connected by the Panama Canal!</p>
 
-    <h1>SOURCES:</h1>
-        <p6>
-        SOURCE #1
-        </p6>
+      <p>
+        <a
+          className="Instructions-link"
+          href="https://www.worldwildlife.org/stories/unicorn-of-the-sea-narwhal-facts"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UNICORN OF THE SEA: Narwhal Facts by WorldWildLife
+        </a>
+      </p>
+      <p> Unicorn of the Sea!!! Don't even look like unicorns! And instead of unicorn horns, they have <em>tusks</em>. What a sham?!?</p>
 
-        <p7>
-        SOURCE #2
-        </p7>
+      <p>
+        <a
+          className="Instructions-link"
+          href="https://www.britannica.com/animal/walrus"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WALRUS by the Editors of Encyclopaedia for Encyclopedia Britannica, 18 Feb. 2023.
+        </a>
+      </p>
+      <p>One nickname sounds like something out of Harry Potter! So where's the creativity in <em>the other one</em>?!?</p>
 
-        <p8>
-        SOURCE #3
-        </p8>
-    </body>
+      <p>
+        <a
+          className="Instructions-link"
+          href="https://oceanconservancy.org/blog/2019/06/05/biggest-animals-ocean/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Who are the Biggest Animals in the Ocean?
+        </a>
+      </p>
+      <p>Mirror, mirror! On the wall! Who's the <em>largest</em> of them all?</p>
+
+      <p>
+        <a
+          className="Instructions-link"
+          href="https://www.history.com/this-day-in-history/magellans-expedition-circumnavigates-globe"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Magellan’s Expedition
+        </a>
+      </p>
+      <p>I was looking for a word that <em>rhymes with euphoria</em>!!!</p>
+
+      <p>
+        <a
+          className="Instructions-link"
+          href="https://www.livescience.com/55412-whale-sharks.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facts About Whale Sharks By Alina Bradford
+        </a>
+      </p>
+      <p>It's about the size of a WHAT!</p>
+
+      <p>
+        <a
+          className="Instructions-link"
+          href="https://www.bbc.com/news/science-environment-22715018"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          How the turtle got its unique hard shell By Melissa Hogenboom, Science reporter, BBC News
+        </a>
+      </p>
+      <p>That's <em>a lot</em> of bones!</p>
+      </p>
+      </body>
+
     </div>
 
   );
 };
+
   
 export default Instructions;
