@@ -7,10 +7,13 @@ import { ReturnBtn } from "../Components/instructions/returnBtn";
 
   const Instructions = () => {
   return (
-    <div className="Instructions">
-      <header className="Instructions-header"></header>
-
+    <div className="Instructions-page">
+      <header className="Instructions-header">
       <h1 id="title1">Instructions</h1>
+      </header>
+
+      <body className="Instructions-body">
+      <p1 id="body1">
         <p>
         1. There will be five questions in total for each difficulty chosen. 
         </p>
@@ -35,8 +38,11 @@ import { ReturnBtn } from "../Components/instructions/returnBtn";
 
         <p>
         INPUT 'HOME' button on LEFT and 'START' button on RIGHT 
-        </p> 
+        </p>
+        </p1>
+      </body>
 
+      <body className="Sources-body">
       <h2 id="title2">HELPFUL SOURCES:</h2>
       <p id="sourceParas">
       <p>
@@ -123,6 +129,7 @@ import { ReturnBtn } from "../Components/instructions/returnBtn";
       </p>
       <p>That's <em>a lot</em> of bones!</p>
       </p>
+      </body>
 
     </div>
 
