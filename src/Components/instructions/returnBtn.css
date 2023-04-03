@@ -1,0 +1,29 @@
+.returnBtn__container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 55rem;
+}
+
+.returnBtn {
+    align-self: flex-end;
+}
+
+.fa-fish {
+    color: #007ea7;
+    position: relative;
+}
+
+i:after {
+    content: 'BACK';
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: medium;
+    font-weight: 800;
+    color: #fff;
+}
+
+.returnBtn__text {
+    font-family: inherit;
+}

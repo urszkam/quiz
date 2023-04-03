@@ -1,0 +1,29 @@
+.startBtn__container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 55rem;
+}
+
+.startBtn {
+    align-self: flex-end;
+}
+
+.fa-fish {
+    color: #007ea7;
+    position: relative;
+}
+
+i:after {
+    content: 'START';
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: medium;
+    font-weight: 800;
+    color: #fff;
+}
+
+.startBtn__text {
+    font-family: inherit;
+}
