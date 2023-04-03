@@ -1,9 +1,13 @@
 footer {
   position: fixed;
-  background: linear-gradient(to bottom, #ffffff 0%, #7bdff2 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #007ea7 100%);
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 6px 10px 6px 10px;
+  padding: 6px 10px 2px 10px;
   text-align: center;
+}
+
+.footer__text {
+  color: whitesmoke;
 }
