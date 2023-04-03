@@ -8,6 +8,7 @@ import { ReturnBtn } from "../Components/instructions/returnBtn";
   const Instructions = () => {
   return (
     <div className="Instructions-page">
+      
       <header className="Instructions-header">
       <h1 id="title1">Instructions</h1>
       </header>
@@ -37,7 +38,10 @@ import { ReturnBtn } from "../Components/instructions/returnBtn";
         </p>
 
         <p>
-        INPUT 'HOME' button on LEFT and 'START' button on RIGHT 
+        <div className="buttonChoices">
+          <ReturnBtn/>
+          <StartBtn/>
+        </div>
         </p>
         </p1>
       </body>

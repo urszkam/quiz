@@ -1,20 +1,31 @@
 /* selector {
   attribute: new attribute value;
+  column-count
 } */
 
-.Instructions {
+.Instructions-page {
     text-align: center;
+    font-family: 'Poppins';
   }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+
+  .Instructions-body {
+    font-family: 'bookantique';
+
   }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
+
+  .returnBtn__container {
+    box-sizing: (border-box + large);
+    text-align: right;
+    align-items: right;
+    justify-content: center;
+    align-content:center;
+  }
+
+  .startBtn__container {
+    text-align: right;
+    align-items: right;
+    justify-content: center;
+    align-content: end;
   }
   
   .App-header {
@@ -31,13 +42,11 @@
   .Instructions-link {
     color: #007ea7;
   }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+
+  .Sources-body {
+    font-family: 'Poppins';
   }
+  
+/* 
+  INPUT 'HOME' button on LEFT and 'START' button on RIGHT  */
   
