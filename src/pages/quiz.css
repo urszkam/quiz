@@ -16,3 +16,7 @@
     align-items: center;
     height: 10rem;
 }
+
+i:after {
+    content: 'Start';
+}

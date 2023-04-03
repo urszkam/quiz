@@ -12,9 +12,11 @@ import { useLocation } from "react-router-dom";
 
 
 const Quiz = () => {
-    const location = useLocation();
-    const noOfQuestions = location.state.noOfQuestions;
-    const diffLvl = location.state.difficultyLvl;
+    // const location = useLocation();
+    // const noOfQuestions = location.state.noOfQuestions;
+    // const diffLvl = location.state.difficultyLvl;
+    const noOfQuestions = 2;
+    const diffLvl = 2;
     
     const [count, setCount] = useState(0);
     const [score, setScore] = useState(0);
@@ -27,9 +29,8 @@ const Quiz = () => {
     const questionsToAdd = (temp
                                   .sort(() => 0.5 - Math.random()))
                                   .slice(0,noOfQuestions);
-    console.log(questionsToAdd);
+
     const [currentQuestionSet, setQuestions] = useState(questionsToAdd);
-    console.log(currentQuestionSet);
 
     const increment = () => {
       setCount(count + 1);
