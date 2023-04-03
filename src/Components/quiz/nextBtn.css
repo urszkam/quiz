@@ -13,7 +13,8 @@
     position: relative;
 }
 
-i:after {
+i::after {
+    content: 'Start';
     position: absolute;
     top: 50%;
     left: 45%;

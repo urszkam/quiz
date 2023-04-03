@@ -17,6 +17,6 @@
     height: 10rem;
 }
 
-i:after {
-    content: 'Start';
+#next::after {
+    content: 'Next';
 }
