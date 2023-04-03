@@ -6,12 +6,14 @@ import Main from './pages/main';
 import Instructions from './pages/instructions';
 import Quiz from './pages/quiz';
 import { Footer } from './Components/quiz/footer'
+import { Logo } from './Components/quiz/logo'
 
 
 
 function App() {
   return (
     <Router>
+      <Logo />
     <Routes>
         <Route exact path='/' element={<Main />} />
         <Route path='/instructions' element={<Instructions/>} />
