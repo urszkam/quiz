@@ -8,31 +8,29 @@ import { MsgWriter } from '../Components/quiz/msgWriter'
 import { Logo } from '../Components/quiz/logo';
 import { Fish } from '../Components/quiz/fish';
 import { quizContent } from '../questions';
+import { useLocation } from "react-router-dom";
 
-
-const difficultyLvl = 0;
-const noOfQuestions = 3;
-
-// choose random questions
-const getQuestions = (diffLvl, num, questionSet=quizContent) => {
-  const temp = questionSet[diffLvl].questions;
-  const currentQuestionSet = (temp
-                                  .sort(() => 0.5 - Math.random()))
-                                  .slice(0,num);
-  return currentQuestionSet;
-};
-
-const currentQuestionSet = getQuestions(difficultyLvl, noOfQuestions);
 
 const Quiz = () => {
-  
+    const location = useLocation();
+    const noOfQuestions = location.state.noOfQuestions;
+    const diffLvl = location.state.difficultyLvl;
+    
     const [count, setCount] = useState(0);
     const [score, setScore] = useState(0);
     const [msgWriter, setMsgWriter] = useState([]);
     const [answerOrder, setAnswerOrder] = useState([0,1,2,3].sort(() => 0.5 -Math.random()));
 
     const answerBtns = document.getElementsByClassName("answerBtn");
-  
+
+    const temp = quizContent[diffLvl].questions;
+    const questionsToAdd = (temp
+                                  .sort(() => 0.5 - Math.random()))
+                                  .slice(0,noOfQuestions);
+    console.log(questionsToAdd);
+    const [currentQuestionSet, setQuestions] = useState(questionsToAdd);
+    console.log(currentQuestionSet);
+
     const increment = () => {
       setCount(count + 1);
     }
@@ -90,7 +88,7 @@ const Quiz = () => {
       removeHighlight();
     }
   
-    if (count == noOfQuestions) {
+    if (count === noOfQuestions) {
       return (
         <div className="App__container">
           <header>
