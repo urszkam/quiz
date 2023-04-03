@@ -3,6 +3,7 @@ import './main.css';
 import { NextBtn } from "../Components/quiz/nextBtn";
 import { useNavigate } from "react-router-dom";
   
+
 const Main = () => {
   const navigate = useNavigate();
 
@@ -28,3 +29,4 @@ const Main = () => {
 };
   
 export default Main;
+
