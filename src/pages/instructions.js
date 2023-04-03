@@ -3,10 +3,23 @@ import './instructions.css';
 import { Logo } from '../Components/quiz/logo';
 import { StartBtn } from "../Components/instructions/startBtn";
 import { ReturnBtn } from "../Components/instructions/returnBtn";
+import { NextBtn } from "../Components/quiz/nextBtn";
+import { useLocation, useNavigate } from "react-router-dom";
 
 
   const Instructions = () => {
-  return (
+    const navigate = useNavigate();
+    const location = useLocation();
+    // const noOfQuestions = location.state.noOfQuestions;
+    // const diffLvl = location.state.difficultyLvl;
+    const noOfQuestions = 2;
+    const diffLvl = 1;
+    const handleClick = () => {
+        navigate("/quiz", {state: {
+                            difficultyLvl: diffLvl,
+                            noOfQuestions: noOfQuestions}})
+      }
+    return (
     <div className="Instructions-page">
       
       <header className="Instructions-header">
@@ -40,7 +53,7 @@ import { ReturnBtn } from "../Components/instructions/returnBtn";
         <p>
         <div className="buttonChoices">
           <ReturnBtn/>
-          <StartBtn/>
+          <StartBtn action={handleClick()}/>
         </div>
         </p>
         </p1>
