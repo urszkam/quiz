@@ -9,8 +9,8 @@ const Main = () => {
   const handleClick = () => {
     let diffLvl = Number(document.getElementById("diff-level").value);
     let num = Number(document.getElementById("question-number").value);
-    console.log(diffLvl, num);
-    navigate("/quiz", {state: {
+
+    navigate("/instructions", {state: {
                         difficultyLvl: diffLvl,
                         noOfQuestions: num}})
   }
@@ -28,3 +28,22 @@ const Main = () => {
 };
   
 export default Main;
+
+
+import { NextBtn } from "../Components/quiz/nextBtn";
+import { useLocation, useNavigate } from "react-router-dom";
+
+const navigate = useNavigate();
+const location = useLocation();
+
+const noOfQuestions = location.state.noOfQuestions;
+const diffLvl = location.state.difficultyLvl;
+
+const handleClick = () => {
+    navigate("/quiz", {state: {
+                        difficultyLvl: diffLvl,
+                        noOfQuestions: noOfQuestions}})
+  }
+
+  <NextBtn
+    action={handleClick}/>
