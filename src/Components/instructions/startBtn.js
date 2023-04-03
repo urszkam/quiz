@@ -13,7 +13,3 @@ export const StartBtn = (props) => {
         </div>
     );
 };
-
-
-export default StartBtn;
-
