@@ -26,16 +26,8 @@
   .Instructions-link {
     color: #007ea7;
   }
-/* 
-  .nextBtn__container {
-      flex-direction: column;
-  }
 
-  .nextBtn {
-      align-self: center;
-  } */
-
-
+  
   .nextBtn__container {
     flex-direction: column;
   }
