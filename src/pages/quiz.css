@@ -20,3 +20,13 @@
 #next::after {
     content: 'Next';
 }
+
+#leftDiv {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 55rem;
+}
+
+#leftBtn {
+    align-self: flex-end;
+}

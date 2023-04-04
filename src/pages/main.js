@@ -18,12 +18,14 @@ const Main = () => {
   }
 
   return (
-    <div>
+    <div className="page-container">
       <h1>Main page</h1>
       {/* <input id="question-number" type="text"></input>
       <input id="diff-level" type="text"></input> */}
       <NextBtn
-        action={handleClick}/>
+        action={handleClick}
+        id_div={"leftDiv"}
+        id_btn={"lebtBtn"}/>
     </div>
   );
 };

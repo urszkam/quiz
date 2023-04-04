@@ -92,9 +92,9 @@ const Quiz = () => {
     if (count === noOfQuestions) {
       return (
         <div className="App__container">
-          <header>
+          {/* <header>
             <Logo />
-          </header>
+          </header> */}
           <div className="page-container">
               <Score 
                 finalScore={score/noOfQuestions}
@@ -108,9 +108,9 @@ const Quiz = () => {
     
     return (
       <div className="App__container">
-        <header>
+        {/* <header>
           <Logo />
-        </header>
+        </header> */}
         <div className="page-container">
             <Question 
               id={count}
@@ -140,6 +140,8 @@ const Quiz = () => {
             <NextBtn 
               action={nextQuestion}
               id={"next"}
+              id_div={"leftDiv"}
+              id_btn={"leftBtn"}
             />
         </div>
         {/* <Footer /> */}

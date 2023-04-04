@@ -28,10 +28,13 @@
   }
 
   
-  .nextBtn__container {
+  .nextBtn__container #centerDiv {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .nextBtn {
+  
+  .nextBtn #startBtn {
     align-self: center;
   }
 

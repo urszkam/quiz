@@ -1,6 +1,5 @@
 import React from "react";
 import './instructions.css';
-import { Logo } from '../Components/quiz/logo';
 import { ReturnBtn } from "../Components/instructions/returnBtn";
 import { NextBtn } from "../Components/quiz/nextBtn";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -55,7 +54,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 
         <p>
         <div className="buttonChoice__container">
-          <NextBtn action={handleClick}/>
+          <NextBtn action={handleClick}
+            id_div={"startDiv"}
+            id_btn={"startBtn"}/>
         </div>
         </p>
         </p1>
@@ -149,7 +150,8 @@ import { useLocation, useNavigate } from "react-router-dom";
       <p>That's <em>a lot</em> of bones!</p>
       <br></br>
       </p>
-      <ReturnBtn action={returnHome}/>
+      <ReturnBtn 
+        action={returnHome}/>
       </body>
 
     </div>
