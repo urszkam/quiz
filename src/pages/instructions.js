@@ -147,6 +147,7 @@ import { useLocation, useNavigate } from "react-router-dom";
         </a>
       </p>
       <p>That's <em>a lot</em> of bones!</p>
+      <br></br>
       </p>
       <ReturnBtn action={returnHome}/>
       </body>
