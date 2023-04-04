@@ -17,7 +17,11 @@ import { useLocation, useNavigate } from "react-router-dom";
         navigate("/quiz", {state: {
                             difficultyLvl: diffLvl,
                             noOfQuestions: noOfQuestions}})
-      }
+
+    }
+    const returnHome = () => {
+      navigate("/")
+    }
     return (
     <div className="Instructions-page">
       
@@ -28,12 +32,12 @@ import { useLocation, useNavigate } from "react-router-dom";
       <body className="Instructions-body">
       <p1 id="body1">
         <p>
-        1. There will be five questions in total for each difficulty chosen. 
+        1. Make sure that you're comfortable with your choice in difficulty and number of questions. 
         </p>
 
         <p>
-        NOTE: The difficulty chosen from the starting page cannot be changed after starting the quiz.
-        In order to change the amount of questions, please return to the main page and change the amount to your liking.
+        NOTE: The difficulty and number of questions chosen from the starting page cannot be changed after starting the quiz.
+        In order to make changes, use the 'RETURN' button on the bottom of the page to return to the main page and change the amount to your liking.
         </p>
 
         <p>
@@ -42,11 +46,11 @@ import { useLocation, useNavigate } from "react-router-dom";
 
         <p>
         3. Feel free to look up the answers, no judging from our end.
-        Google is always lovely but try these sources at the bottom of the page for a better grasp of the topic.
+        Google is always lovely but try these sources at the bottom of the page for some hints on the answers to some questions.
         </p>
 
         <p>
-        4. Have fun guessing. You may be shocked by how lucky you actually are or by how much you actually know.
+        4. But.... have fun guessing. You may be shocked by how lucky you actually are or by how much you actually know.
         </p>
 
         <p>
@@ -144,7 +148,7 @@ import { useLocation, useNavigate } from "react-router-dom";
       </p>
       <p>That's <em>a lot</em> of bones!</p>
       </p>
-      <ReturnBtn/>
+      <ReturnBtn action={returnHome}/>
       </body>
 
     </div>

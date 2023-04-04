@@ -7,7 +7,7 @@ export const ReturnBtn = (props) => {
     const {action} = props;
     return (
         <div className="returnBtn__container">
-        <button className="returnBtn" type="button">
+        <button className="returnBtn" onClick={action} type="button">
             <h2 className="returnBtn__text">
                 RETURN HOME
             </h2>
