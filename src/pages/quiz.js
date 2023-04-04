@@ -139,6 +139,7 @@ const Quiz = () => {
 
             <NextBtn 
               action={nextQuestion}
+              id={"next"}
             />
         </div>
         {/* <Footer /> */}
