@@ -23,3 +23,8 @@
 #leftBtn {
     align-self: flex-end;
 }
+
+.dropdown__container {
+    display: flex;
+    flex-direction: row;
+}

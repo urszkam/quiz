@@ -8,10 +8,10 @@ import { useLocation, useNavigate } from "react-router-dom";
   const Instructions = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    // const noOfQuestions = location.state.noOfQuestions;
-    // const diffLvl = location.state.difficultyLvl;
-    const noOfQuestions = 2;
-    const diffLvl = 1;
+    const noOfQuestions = location.state.noOfQuestions;
+    const diffLvl = location.state.difficultyLvl;
+    // const noOfQuestions = 2;
+    // const diffLvl = 1;
     const handleClick = () => {
         navigate("/quiz", {state: {
                             difficultyLvl: diffLvl,

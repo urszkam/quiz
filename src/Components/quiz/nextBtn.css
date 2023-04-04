@@ -4,9 +4,9 @@
     width: 55rem;
 }
 
-.nextBtn {
+/* .nextBtn {
     align-self: flex-end;
-}
+} */
 
 .nextBtn__container #leftDiv {
     display: flex;

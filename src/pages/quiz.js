@@ -12,11 +12,11 @@ import { useLocation } from "react-router-dom";
 
 
 const Quiz = () => {
-    // const location = useLocation();
-    // const noOfQuestions = location.state.noOfQuestions;
-    // const diffLvl = location.state.difficultyLvl;
-    const noOfQuestions = 2;
-    const diffLvl = 2;
+    const location = useLocation();
+    const noOfQuestions = location.state.noOfQuestions;
+    const diffLvl = location.state.difficultyLvl;
+    // const noOfQuestions = 2;
+    // const diffLvl = 2;
     
     const [count, setCount] = useState(0);
     const [score, setScore] = useState(0);

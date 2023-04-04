@@ -1,31 +1,45 @@
 import React from "react";
 import './main.css';
 import { NextBtn } from "../Components/quiz/nextBtn";
+import { DropdownDiff } from "../Components/main/dropDown";
+import { DropdownNum } from "../Components/main/dropDownNum";
 import { useNavigate } from "react-router-dom";
   
 
 const Main = () => {
   const navigate = useNavigate();
+  let diffLvlNum, questionNum;
 
+  const values = {'Easy': '0', 'Medium': '1', 'Hard': '2'};
+
+  const getVariables = () => {
+    let diffLvlString = document.getElementsByClassName("diff-level")[0].innerHTML;
+    diffLvlNum = Number(values[diffLvlString]);
+    questionNum = Number(document.getElementsByClassName("question-number")[0].innerHTML);
+
+  }
 
   const handleClick = () => {
-    let diffLvl = Number(document.getElementById("diff-level").value);
-    let num = Number(document.getElementById("question-number").value);
-
+    getVariables();
     navigate("/instructions", {state: {
-                        difficultyLvl: diffLvl,
-                        noOfQuestions: num}})
+                        difficultyLvl: diffLvlNum,
+                        noOfQuestions: questionNum}})
   }
 
   return (
     <div className="page-container">
-      <h1>Main page</h1>
-      {/* <input id="question-number" type="text"></input>
-      <input id="diff-level" type="text"></input> */}
+
+      <div className="dropdown__container">
+        <DropdownDiff />
+        <DropdownNum />
+      </div>
+
       <NextBtn
         action={handleClick}
         id_div={"leftDiv"}
-        id_btn={"lebtBtn"}/>
+        id_btn={"lebtBtn"}
+      />
+
     </div>
   );
 };
