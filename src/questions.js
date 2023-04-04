@@ -71,10 +71,10 @@ export const quizContent = [
         },
         {question: "Which ocean is the smallest in the world?",
         answers: [
-            {text: "Arctic Ocean", isCorrect: false},
+            {text: "Arctic Ocean", isCorrect: true},
             {text: "Indian Ocean", isCorrect: false},
             {text: "Southern Ocean", isCorrect: false},
-            {text: "Atlantic Ocean", isCorrect: true}
+            {text: "Atlantic Ocean", isCorrect: false}
         ]
         },
         {question: "What is the process by which ocean water evaporates and forms clouds called?",
