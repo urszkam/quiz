@@ -3,6 +3,7 @@ import './main.css';
 import { NextBtn } from "../Components/quiz/nextBtn";
 import { DropdownDiff } from "../Components/main/dropDown";
 import { DropdownNum } from "../Components/main/dropDownNum";
+import { MainInfo } from "../Components/main/mainInfo";
 import { useNavigate } from "react-router-dom";
   
 
@@ -28,7 +29,7 @@ const Main = () => {
 
   return (
     <div className="page-container">
-
+      <MainInfo />
       <div className="dropdown__container">
         <DropdownDiff />
         <DropdownNum />

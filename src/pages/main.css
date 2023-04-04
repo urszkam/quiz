@@ -14,6 +14,21 @@
     align-items: center;
 }
 
+.dropdown__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40rem;
+    color: #00171fff;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #leftDiv {
     display: flex;
     flex-direction: row-reverse;
@@ -22,9 +37,4 @@
 
 #leftBtn {
     align-self: flex-end;
-}
-
-.dropdown__container {
-    display: flex;
-    flex-direction: row;
 }

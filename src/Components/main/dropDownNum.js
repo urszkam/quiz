@@ -1,6 +1,7 @@
 import React from "react";
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
+import './dropdown.css';
 
 
 export const DropdownNum = () => { 
@@ -15,10 +16,11 @@ export const DropdownNum = () => {
     const defaultOption = options[0];
 
     return (
-        <div>
+        <div className="dropdown">
+            <p className="dropdown__text">Number of questions:</p>
             <Dropdown 
                 options={options}
-                placeholder="Number of questions"
+                placeholder="Choose number"
                 placeholderClassName={"question-number"}
                 />   
         </div>

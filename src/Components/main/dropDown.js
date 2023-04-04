@@ -4,7 +4,7 @@ import 'react-dropdown/style.css';
 import './dropdown.css'
 
 
-export const DropdownDiff = () => { 
+export const DropdownDiff = () => {
     const options = [
                     {value: "0", label:'Easy'},
                     {value: "1", label: 'Medium'},
@@ -12,10 +12,11 @@ export const DropdownDiff = () => {
     ];
 
     return (
-        <div>
+        <div className="dropdown">
+            <p className="dropdown__text">Difficulty Level:</p>
             <Dropdown 
                 options={options}
-                placeholder="Deifficulty Level"
+                placeholder="Choose level"
                 placeholderClassName={"diff-level"}
                 />   
         </div>

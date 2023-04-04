@@ -71,8 +71,8 @@ export const quizContent = [
         },
         {question: "Which ocean is the smallest in the world?",
         answers: [
-            {text: "Arctic Ocean", isCorrect: true},
-            {text: "Indian Ocean", isCorrect: false},
+            {text: "Arctic Ocean", isCorrect: false},
+            {text: "Indian Ocean", isCorrect: true},
             {text: "Southern Ocean", isCorrect: false},
             {text: "Atlantic Ocean", isCorrect: false}
         ]

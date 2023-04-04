@@ -1,0 +1,15 @@
+.main__header {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.main__text {
+    font-size: larger;
+    line-height: 1.6;
+}
+
+.main__welcome {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #007ea7ff;
+}

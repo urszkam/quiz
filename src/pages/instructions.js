@@ -30,25 +30,25 @@ import { useLocation, useNavigate } from "react-router-dom";
       </header>
 
       <div className="Instructions-body">
-        <p>
+        <p className="instruction__text">
         <b>1.</b> Make sure that you're comfortable with your choice in difficulty and number of questions. 
         </p>
 
-        <p>
+        <p className="instruction__text">
         <b>NOTE:</b> The difficulty and number of questions chosen from the starting page cannot be changed after starting the quiz.
         In order to make changes, use the <b>'RETURN'</b> button on the bottom of the page to return to the main page and change the amount to your liking.
         </p>
         
-        <p>
+        <p className="instruction__text">
         <b>2.</b> The qustions will be randomly selected and will strictly revolve around the ocean life and the organisms living therein.
         </p>
 
-        <p>
+        <p className="instruction__text">
         <b>3.</b> Feel free to look up the answers, no judging from our end.
         Google is always lovely but try these sources at the bottom of the page for hints on the answers to some of the questions.
         </p>
 
-        <p>
+        <p className="instruction__text">
         <b>4.</b> Have fun guessing! You may be shocked by how lucky you actually are or by how much you actually know.
         </p>
 
@@ -65,7 +65,8 @@ import { useLocation, useNavigate } from "react-router-dom";
           rel="noopener noreferrer">
           PANAMA CANAL by Norman J. Padelford et. al. for Encyclopedia Britannica, March 3, 2023.
         </a>
-        <p>Said literally no one: I yearn to know what <em>oceans</em> are connected by the Panama Canal!</p>
+        <p className="instruction__text">
+          Said literally no one: I yearn to know what <em>oceans</em> are connected by the Panama Canal!</p>
         <a
           className="Instructions-link"
           href="https://www.worldwildlife.org/stories/unicorn-of-the-sea-narwhal-facts"
@@ -73,7 +74,8 @@ import { useLocation, useNavigate } from "react-router-dom";
           rel="noopener noreferrer">
           UNICORN OF THE SEA: Narwhal Facts by WorldWildLife
         </a>
-        <p> Unicorn of the Sea!!! Don't even look like unicorns! And instead of unicorn horns, they have <em>tusks</em>. What a sham?!?</p>
+        <p className="instruction__text">
+          Unicorn of the Sea!!! Don't even look like unicorns! And instead of unicorn horns, they have <em>tusks</em>. What a sham?!?</p>
         <a
           className="Instructions-link"
           href="https://www.britannica.com/animal/walrus"
@@ -81,7 +83,8 @@ import { useLocation, useNavigate } from "react-router-dom";
           rel="noopener noreferrer">
           WALRUS by the Editors of Encyclopaedia for Encyclopedia Britannica, 18 Feb. 2023.
         </a>
-        <p>One nickname sounds like something out of Harry Potter! So where's the creativity in <em>the other one</em>?!?</p>
+        <p className="instruction__text">
+          One nickname sounds like something out of Harry Potter! So where's the creativity in <em>the other one</em>?!?</p>
         <a
           className="Instructions-link"
           href="https://oceanconservancy.org/blog/2019/06/05/biggest-animals-ocean/"
@@ -89,7 +92,8 @@ import { useLocation, useNavigate } from "react-router-dom";
           rel="noopener noreferrer">
           Who are the Biggest Animals in the Ocean?
         </a>
-        <p>Mirror, mirror! On the wall! Who's the <em>largest</em> of them all?</p>
+        <p className="instruction__text">
+          Mirror, mirror! On the wall! Who's the <em>largest</em> of them all?</p>
         <a
           className="Instructions-link"
           href="https://www.history.com/this-day-in-history/magellans-expedition-circumnavigates-globe"
@@ -97,7 +101,8 @@ import { useLocation, useNavigate } from "react-router-dom";
           rel="noopener noreferrer">
           Magellan’s Expedition
         </a>
-        <p>I was looking for a word that <em>rhymes with euphoria</em>!!!</p>
+        <p className="instruction__text">
+          I was looking for a word that <em>rhymes with euphoria</em>!!!</p>
         <a
           className="Instructions-link"
           href="https://www.livescience.com/55412-whale-sharks.html"
@@ -105,7 +110,8 @@ import { useLocation, useNavigate } from "react-router-dom";
           rel="noopener noreferrer">
           Facts About Whale Sharks By Alina Bradford
         </a>
-        <p>It's about the size of a WHAT!</p>
+        <p className="instruction__text">
+          It's about the size of a WHAT!</p>
         <a
           className="Instructions-link"
           href="https://www.bbc.com/news/science-environment-22715018"
@@ -113,7 +119,8 @@ import { useLocation, useNavigate } from "react-router-dom";
           rel="noopener noreferrer">
           How the turtle got its unique hard shell By Melissa Hogenboom, Science reporter, BBC News
         </a>
-        <p>That's <em>a lot</em> of bones!</p>
+        <p className="instruction__text">
+          That's <em>a lot</em> of bones!</p>
         <ReturnBtn 
           action={returnHome}/>
         </div>

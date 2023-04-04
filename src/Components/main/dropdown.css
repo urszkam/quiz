@@ -1,3 +1,13 @@
-i:after {
-    content: 'Start';
+.dropdown__text {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.Dropdown-placeholder {
+    width: 8rem;
+}
+
+.dropdown {
+    margin-bottom: 3rem;
 }

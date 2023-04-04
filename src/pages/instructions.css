@@ -58,10 +58,11 @@
     font-family: 'Poppins';
   }
   
-p {
+.instruction__text {
   margin-bottom: 0.5rem;
 }
 
-h1 {
+#title1 {
   margin-bottom: 1rem;
+  color: #00171fff;
 }
